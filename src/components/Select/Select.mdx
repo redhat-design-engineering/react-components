@@ -1,0 +1,12 @@
+import { Meta, Story, Title, Canvas, Description } from '@storybook/blocks';
+import * as SelectStories from './Select.stories';
+
+<Meta title="Select" of={SelectStories} />
+
+<Title>Select</Title>
+
+<Description of={SelectStories.Default}/>
+
+<Canvas className="relative">
+  <Story of={SelectStories.Default} height="200px" />
+</Canvas>

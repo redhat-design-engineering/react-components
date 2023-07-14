@@ -1,0 +1,15 @@
+import { Meta, Story, Title, Canvas, Description } from '@storybook/blocks';
+import * as SpinnerStories from './Spinner.stories';
+
+<Meta title="Spinner" of={SpinnerStories} />
+
+<Title>Spinner</Title>
+
+<Description of={SpinnerStories.Large}/>
+
+<Canvas>
+  <Story of={SpinnerStories.Large} />
+  <Story of={SpinnerStories.Medium} />
+  <Story of={SpinnerStories.Small} />
+  <Story of={SpinnerStories.Text} />
+</Canvas>

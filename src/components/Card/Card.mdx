@@ -1,0 +1,21 @@
+import { Meta, Story, Canvas } from '@storybook/blocks';
+import * as CardStories from './Card.stories';
+
+<Meta title="Card" of={CardStories} />
+
+# Card
+
+## Default
+
+<Canvas>
+  <Story of={CardStories.LightTheme} />
+  <Story of={CardStories.LightGrayTheme} />
+</Canvas>
+
+
+## Dark Mode
+
+<Canvas className="dark !bg-black">
+  <Story of={CardStories.LightTheme} />
+  <Story of={CardStories.LightGrayTheme} />
+</Canvas>

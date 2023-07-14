@@ -1,0 +1,26 @@
+import { Meta, Story, Canvas } from '@storybook/blocks';
+import * as AlertStories from './Alert.stories';
+
+<Meta title="Alert" of={AlertStories} />
+
+# Alert
+
+## Default
+<Canvas>
+  <Story of={AlertStories.Default} />
+  <Story of={AlertStories.Info} />
+  <Story of={AlertStories.Warning} />
+  <Story of={AlertStories.Danger} />
+  <Story of={AlertStories.Success} />
+  <Story of={AlertStories.Disabled} args={{isInline: true}} />
+</Canvas>
+
+## InfoInline
+<Canvas>
+  <Story of={AlertStories.DefaultInline} />
+  <Story of={AlertStories.InfoInline} />
+  <Story of={AlertStories.WarningInline} />
+  <Story of={AlertStories.DangerInline} />
+  <Story of={AlertStories.SuccessInline} />
+  <Story of={AlertStories.DisabledInline} />
+</Canvas>

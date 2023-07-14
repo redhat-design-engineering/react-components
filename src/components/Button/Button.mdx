@@ -1,0 +1,18 @@
+import { Meta, Story, Canvas } from '@storybook/blocks';
+import * as ButtonStories from './Button.stories';
+
+<Meta title="Button" />
+
+# Button
+
+## Variants
+
+<Canvas>
+  <Story of={ButtonStories.Danger} />
+  <Story of={ButtonStories.Primary} />
+  <Story of={ButtonStories.Secondary} />
+  <Story of={ButtonStories.SecondaryDanger} />
+  <Story of={ButtonStories.Tertiary} />
+  <Story of={ButtonStories.Link} />
+  <Story of={ButtonStories.Disabled} />
+</Canvas>
